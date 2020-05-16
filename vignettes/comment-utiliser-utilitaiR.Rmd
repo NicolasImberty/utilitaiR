@@ -1,0 +1,33 @@
+---
+title: "comment-utiliser-utilitaiR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{comment-utiliser-utilitaiR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(utilitaiR)
+```
+
+```{r}
+compte_NA <- function(df) {
+  tmp <- is.na(df)
+  nb1 <- sum(tmp)
+  nb2 <- apply(tmp, 2, sum)
+  return(list(nb1, nb2))
+}
+```
+
+```{r}
+toto <- data.frame(var1 = 1:4, var2 = c("a", "b", NA, "d"), var3 = c(NA, NA, TRUE, FALSE))
+compte_NA(toto)
+```
