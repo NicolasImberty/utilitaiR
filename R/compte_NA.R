@@ -1,7 +1,8 @@
 #' compte_NA
+#'
 #' compte le nombre total de NA et le nombre de NA par variable
 #'
-#' @param df datagrame
+#' @param df data.frame
 #'
 #' @return liste
 #' @export

@@ -2,19 +2,17 @@
 % Please edit documentation in R/compte_NA.R
 \name{compte_NA}
 \alias{compte_NA}
-\title{compte_NA
-compte le nombre total de NA et le nombre de NA par variable}
+\title{compte_NA}
 \usage{
 compte_NA(df)
 }
 \arguments{
-\item{df}{datagrame}
+\item{df}{data.frame}
 }
 \value{
 liste
 }
 \description{
-compte_NA
 compte le nombre total de NA et le nombre de NA par variable
 }
 \examples{
